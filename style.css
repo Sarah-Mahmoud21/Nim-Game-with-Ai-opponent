@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+}
+.group-label {
+    font-size: 14px;
+    margin-right: 5px;
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the content horizontally */
+}
+
+.button-container {
+    margin-top: 20px; /* Add margin to create space between the containers */
+}
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color:  #ff66b2;
+}
+
+
+.button {
+    background-color: transparent;
+    color: #ff66b2; /* Cold Pink */
+    padding: 10px 20px;
+    border: 2px solid #ff66b2; /* Cold Pink */
+    border-radius: 30px; /* Adjust the border-radius to control the circular rectangular shape */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff66b2; /* Cold Pink */
+    color: #fff; /* White or a light color for text on hover */
+}
+.pcTurn{
+    margin-left: 640px;
+    margin-top: 20px;
+    background-color: transparent;
+    color: #ff66b2; /* Cold Pink */
+    padding: 10px 20px;
+    border: 2px solid #ff66b2; /* Cold Pink */
+    border-radius: 30px; /* Adjust the border-radius to control the circular rectangular shape */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.pcTurn:hover {
+    background-color: #ff66b2; /* Cold Pink */
+    color: #fff; /* White or a light color for text on hover */
+}
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Game Board Styles */
+.row-container {
+    display: flex;
+    align-items: center; /* Center sticks vertically */
+    justify-content: center; /* Center sticks horizontally */
+    margin-bottom: 10px;
+    height: 100%; 
+   
+}
+
+.group {
+    display: flex;
+    align-items: center; /* Center shapes vertically within the group */
+    justify-content: center; /* Center shapes horizontally within the group */
+    margin-bottom: 0px;
+}
+
+
+/* Radio Button Styles */
+input[type="radio"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #ff66b2; /* Cold Pink */
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+}
+
+input[type="radio"]:checked {
+    background-color: #ff66b2; /* Cold Pink */
+}
+
+/* Styling the stick input fields */
+#sticksForm label {
+    
+    display: block;
+}
+
+#sticksForm input {
+    width: 50px;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.circle {
+   
+    width: 50px;
+    height: 50px;
+    margin: 5px; /* Adjust margin for spacing between shapes */
+    background-color: #ff66b2;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.circle:hover {
+    transform: scale(1.2);
+    background-color: #867a80;
+}
